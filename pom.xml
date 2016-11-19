@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mypet.base</groupId>
+    <artifactId>bom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.spring.gradle/dependency-management-plugin -->
+        <dependency>
+            <groupId>io.spring.gradle</groupId>
+            <artifactId>dependency-management-plugin</artifactId>
+            <version>0.6.1.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.spring.platform/platform-bom -->
+        <!--使用一部分spring提供的包版本,-->
+        <dependency>
+            <groupId>io.spring.platform</groupId>
+            <artifactId>platform-bom</artifactId>
+            <version>2.0.8.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+    <!-- 维护整个mypet集团的包版本</dependencyManagement> ->
+       <!-添加checkstype 和 findbug 插件-->
+
+
+</project>
