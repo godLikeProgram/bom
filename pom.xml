@@ -4,26 +4,52 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.2.RELEASE</version>
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
     <groupId>com.mypet.base</groupId>
     <artifactId>bom</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.spring.gradle/dependency-management-plugin -->
-        <dependency>
-            <groupId>io.spring.gradle</groupId>
-            <artifactId>dependency-management-plugin</artifactId>
-            <version>0.6.1.RELEASE</version>
-        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.spring.platform/platform-bom -->
-        <!--使用一部分spring提供的包版本,-->
-        <dependency>
-            <groupId>io.spring.platform</groupId>
-            <artifactId>platform-bom</artifactId>
-            <version>2.0.8.RELEASE</version>
-        </dependency>
-    </dependencies>
+
+
+    <!--<dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+
+            &lt;!&ndash; https://mvnrepository.com/artifact/io.spring.gradle/dependency-management-plugin &ndash;&gt;
+            <dependency>
+                <groupId>io.spring.gradle</groupId>
+                <artifactId>dependency-management-plugin</artifactId>
+                <version>0.6.1.RELEASE</version>
+            </dependency>
+
+            &lt;!&ndash; https://mvnrepository.com/artifact/io.spring.platform/platform-bom &ndash;&gt;
+            &lt;!&ndash;使用一部分spring提供的包版本,&ndash;&gt;
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>2.0.8.RELEASE</version>
+            </dependency>
+
+
+        <dependencies>
+
+    </dependencyManagement>-->
+
+
 
     <!-- 维护整个mypet集团的包版本</dependencyManagement> ->
        <!-添加checkstype 和 findbug 插件-->
